@@ -1,3 +1,7 @@
+import com.sun.source.tree.BinaryTree;
+
+import java.util.LinkedList;
+
 /**
  * User: jitse
  * Date: 8/29/14
@@ -6,23 +10,18 @@
 public class Test {
 
     public static void main(String[] args) {
+        LinkedList<Integer> list = new LinkedList<Integer>();
 
-        String word = "hello world";
-        char c = word.charAt(4);
+        list.add(5);
+        list.add(3);
+        list.add(2);
+        list.add(4);
+        list.add(1);
 
-        System.out.println(c == word.charAt(7));
+        BinaryTree tree;
 
-
-
-
-        StringBuilder sb = new StringBuilder();
-
-
-        for (int i=word.length() -1 ;i>= 0; i--) {
-            sb.append(word.charAt(i));
+        for (Integer i : list) {
+            System.out.println(i);
         }
-
-
-        System.out.println(sb.toString());
     }
 }
