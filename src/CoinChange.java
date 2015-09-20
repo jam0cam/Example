@@ -1,4 +1,5 @@
 /**
+ * Given an amount, say 100 pennies, find all possible ways to give back change, using pennies, nickels, dimes and quarters
  * User: jitse
  * Date: 9/20/15
  * Time: 1:37 PM
