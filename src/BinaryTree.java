@@ -144,6 +144,10 @@ public class BinaryTree {
         }
     }
 
+    /**
+     * same as dfs
+     * @param node
+     */
     private void preOrder(BinaryTreeNode node) {
         System.out.println(node.data);
 

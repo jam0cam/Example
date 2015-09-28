@@ -1,5 +1,7 @@
 /**
- * Given an amount, say 100 pennies, find all possible ways to give back change, using pennies, nickels, dimes and quarters
+ * Given an infinite number of quarters (25 cents), dimes (10 cents), nickels (5 cents) and pennies (1 cent),
+ * write code to calculate the number of ways of representing n cents.
+ *
  * User: jitse
  * Date: 9/20/15
  * Time: 1:37 PM
