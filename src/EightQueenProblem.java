@@ -23,6 +23,7 @@ public class EightQueenProblem {
     public static void dropPiece(int row) {
         if (row >= 8) {
             completedBoards.add(board);
+            System.out.println("completed board");
             return;
         }
 
@@ -33,6 +34,8 @@ public class EightQueenProblem {
                 board[row][i] = 0;
             }
         }
+
+        System.out.println("INCOMPLETE board");
     }
 
     private static boolean isConflict(int row, int col) {
