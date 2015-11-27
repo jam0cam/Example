@@ -1,3 +1,5 @@
+import java.util.*;
+
 /**
  * User: jitse
  * Date: 8/29/14
@@ -6,29 +8,21 @@
 public class Test {
 
     public static void main(String[] args) {
-        GoodPerson gp = (GoodPerson) getPerson();
-        System.out.println(gp.name + " "  + gp.isGood);
 
+        List<Integer> list = new ArrayList<>();
 
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
 
-        Person p = getPerson();
-        System.out.println(p.name + " ");
+        while (!list.isEmpty()) {
+            list.remove(0);
+        }
 
-        Person p2 = getPerson2();
-
-        System.out.println(p2.name);
+        System.out.println("list is empty");
     }
-
-    public static Person getPerson() {
-        GoodPerson p = new GoodPerson("jia");
-        p.isGood = true;
-        return p;
-    }
-
-    public static GoodPerson getPerson2() {
-        return new GoodPerson("testing");
-    }
-
 
 
 }

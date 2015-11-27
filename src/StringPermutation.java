@@ -8,7 +8,7 @@ import java.util.List;
  */
 public class StringPermutation {
 
-    static String name = "SKY";
+    static String name = "SKYM";
 
     public static void main(String[] args) {
         List<String> results = permute(name);
@@ -16,8 +16,8 @@ public class StringPermutation {
     }
 
     static void print(List<String> strings) {
-        for (String s : strings) {
-            System.out.println(s);
+        for (int i=0; i<strings.size(); i++) {
+            System.out.println(i + ":" + strings.get(i));
         }
     }
 
@@ -34,36 +34,15 @@ public class StringPermutation {
             List<String> result = permute(rest);
 
             for (String s : result) {
-                List<String> inserted = insert(head, s);
-                rval.addAll(inserted);
+
+                for (int i=0; i<=s.length(); i++) {
+                    String firstHalf = s.substring(0, i);
+                    String secondHalf = s.substring(i, s.length());
+                    rval.add(firstHalf + head + secondHalf);
+                }
             }
 
             return rval;
         }
     }
-
-    private static List<String> insert(char head, String s) {
-        List<String> rval = new ArrayList<>();
-
-        if (s == null || s.length() == 0) {
-            rval.add(String.valueOf(head));
-            return rval;
-        } else if (s.length() == 1) {
-            rval.add(head + s);
-            rval.add(s + head);
-            return rval;
-        } else {
-            //more than one character in length
-            for (int i=0; i<=s.length(); i++) {
-                String firstHalf = s.substring(0, i);
-                String secondHalf = s.substring(i, s.length());
-                rval.add(firstHalf + head + secondHalf);
-            }
-
-            return rval;
-        }
-
-
-    }
-
 }

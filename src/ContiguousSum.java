@@ -16,15 +16,31 @@ public class ContiguousSum {
     public static void main(String[] args) {
         numbers = new int[] {2, -8, 3, -2, 4, -10};
         System.out.println("contiguous sequence with maximum sum: " + findSum());
+        System.out.println("contiguous sequence with maximum sum: " + findSum2());
+        System.out.println("====================================");
+
+        numbers = new int[] {2, -8, 3, -2, -1, -10};
+        System.out.println("contiguous sequence with maximum sum: " + findSum());
+        System.out.println("contiguous sequence with maximum sum: " + findSum2());
+        System.out.println("====================================");
 
         numbers = new int[] {-10, 5, 3, 2, -11, 8, 15};
         System.out.println("contiguous sequence with maximum sum: " + findSum());
+        System.out.println("contiguous sequence with maximum sum: " + findSum2());
+        System.out.println("====================================");
+
 
         numbers = new int[] {-10, 5, 3, 2, -9, 8, 15};
         System.out.println("contiguous sequence with maximum sum: " + findSum());
+        System.out.println("contiguous sequence with maximum sum: " + findSum2());
+        System.out.println("====================================");
+
 
         numbers = new int[] {-3, -10, -5};
         System.out.println("contiguous sequence with maximum sum: " + findSum());
+        System.out.println("contiguous sequence with maximum sum: " + findSum2());
+        System.out.println("====================================");
+
 
     }
 
@@ -46,5 +62,29 @@ public class ContiguousSum {
         return max;
     }
 
+
+    /**
+     * Second attempt at writing the same code
+     * @return
+     */
+    static int findSum2() {
+        int [] table = new int[numbers.length];
+        table[0] = numbers[0];
+        int maxSum = table[0];
+
+        for (int i=1; i<numbers.length; i++) {
+            if (table[i-1] > 0) {
+                table[i] = table[i-1] + numbers[i];
+            } else {
+                table[i] = numbers[i];
+            }
+
+            if (table[i] > maxSum) {
+                maxSum = table[i];
+            }
+        }
+
+        return maxSum;
+    }
 
 }
