@@ -1,5 +1,3 @@
-import java.util.*;
-
 /**
  * User: jitse
  * Date: 8/29/14
@@ -9,20 +7,51 @@ public class Test {
 
     public static void main(String[] args) {
 
-        List<Integer> list = new ArrayList<>();
+//
+//
+//        Scanner sc=new Scanner(System.in);
+//        int a=sc.nextInt();
+//        System.out.println("a=" + a);
+//
+//        a=sc.nextInt();
+//        System.out.println("a=" + a);
+//
 
-        list.add(1);
-        list.add(2);
-        list.add(3);
-        list.add(4);
-        list.add(5);
+        int[] arr = {12, 12};
 
-        while (!list.isEmpty()) {
-            list.remove(0);
-        }
+        System.out.println(sumOfIntegers(arr));
 
-        System.out.println("list is empty");
+        int[] arr2 = {1,2,3,4,5};
+        System.out.println(sumOfIntegers(arr2));
+
     }
 
+
+    static long sumOfIntegers(int[] arr) {
+
+        long sum = 0;
+        for (Integer i : arr) {
+            sum += i;
+        }
+
+        return sum;
+    }
+
+
+    static void StairCase(int n) {
+
+        for (int i=1; i<=n; i++) {
+            String val = String.valueOf(n);
+            int numSpaces = n - val.length();
+            for (int j=0; j<numSpaces; j++) {
+                System.out.print(" ");
+            }
+            for (int j=0; j<i; j++) {
+                System.out.print("#");
+            }
+            System.out.println();
+        }
+
+    }
 
 }
