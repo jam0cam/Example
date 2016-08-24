@@ -1,3 +1,5 @@
+package algorithm.sort;
+
 /**
  *
  * Sort each pair of elements. Then, sort every four elements by merging every two pairs.

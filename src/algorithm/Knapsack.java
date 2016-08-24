@@ -1,9 +1,11 @@
+package algorithm;
+
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Knapsack Problem:
+ * algorithm.Knapsack Problem:
  *
  * Given some items, pack the knapsack to get the maximum total value. Each item has some
  * weight and some value. Total weight that we can carry is no more than some fixed number W.

@@ -1,3 +1,5 @@
+package algorithm;
+
 /**
  * Given a price, say $0.63, What is the minimum number of coins needed to make up that amount. Using pennies, nickels, dimes, quarters
  * User: jitse

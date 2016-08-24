@@ -1,3 +1,5 @@
+package algorithm;
+
 /**
  *
  * Write an efficient function that takes stockPrices

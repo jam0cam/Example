@@ -1,8 +1,13 @@
+package algorithm;
+
 /**
- * Created by jitse on 1/7/16.
+ *
+ * Given a list of speeds at which a barber serves clients. There are N customers in line.
+ * How many time units will you have to wait before you can get a haircut?
+ *
  */
 public class BarberShop {
-    static int[] speeds = { 2, 3, 5, 7, 10};
+    static int[] speeds;
 
     public static void main(String[] args) {
 

@@ -1,3 +1,5 @@
+package algorithm.sort;
+
 /**
  *
  * Start at the beginning of an array and swap the first two elements if the first is bigger than the second.

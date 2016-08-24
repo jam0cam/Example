@@ -1,3 +1,5 @@
+package algorithm.sort;
+
 /**
  *
  * Find the smallest element using a linear scan and move it to the front. Then, find the second smallest
