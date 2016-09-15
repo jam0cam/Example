@@ -1,3 +1,5 @@
+package algorithm;
+
 /**
  * Write an algorithm which computes the number of trailing zeros in n factorial.
  * 26! has 6 zeroes

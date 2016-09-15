@@ -1,4 +1,13 @@
+package algorithm;
+
 /**
+ *
+ * Given an array of increasing numbers, find the ration point. For instance:
+ *
+ * 5, 6, 7, 8, 9, 10, 1, 2, 3, 4 ==> the rotation point is at index 5.
+ *
+ * 1, 2, 3, 4 ==>
+ *
  * Created by jitse on 12/22/15.
  */
 public class RotatedArray {
@@ -20,6 +29,17 @@ public class RotatedArray {
 
 
         arr = new int[] {20, 30, 5,     6, 8, 12};
+        System.out.println(arr[simpleAnswer(arr)]);
+        System.out.println(arr[binarySearchAnswer(arr, 0, arr.length-1)]);
+        System.out.println("==============================");
+
+
+        arr = new int[] {1, 2, 3, 4};
+        System.out.println(arr[simpleAnswer(arr)]);
+        System.out.println(arr[binarySearchAnswer(arr, 0, arr.length-1)]);
+        System.out.println("==============================");
+
+        arr = new int[] {5, 6, 7, 8, 9, 10, 1, 2, 3, 4};
         System.out.println(arr[simpleAnswer(arr)]);
         System.out.println(arr[binarySearchAnswer(arr, 0, arr.length-1)]);
         System.out.println("==============================");

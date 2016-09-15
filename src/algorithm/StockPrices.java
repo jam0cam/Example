@@ -12,6 +12,7 @@ package algorithm;
  *
  *
  * solution: http://stackoverflow.com/questions/7086464/maximum-single-sell-profit
+ * https://www.interviewcake.com/question/java/stock-price
  *
  * Created by jitse on 1/6/16.
  */
