@@ -7,6 +7,9 @@ package algorithm.linkedlist;
  *
  * https://www.interviewcake.com/question/java/reverse-linked-list
  *
+ * time: O(n)
+ * space: 0(1)
+ *
  * Created by Jia on 11/21/16.
  */
 public class ReverseLinkList {
