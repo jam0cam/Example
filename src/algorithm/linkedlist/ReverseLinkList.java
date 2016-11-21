@@ -4,7 +4,9 @@ package algorithm.linkedlist;
  * Write a function for reversing a linked list. Do it in-place.
  * Your function will have one input: the head of the list.
  * Your function should return the new head of the list.
- * <p>
+ *
+ * https://www.interviewcake.com/question/java/reverse-linked-list
+ *
  * Created by Jia on 11/21/16.
  */
 public class ReverseLinkList {
