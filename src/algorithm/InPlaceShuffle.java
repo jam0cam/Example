@@ -11,7 +11,7 @@ import java.util.Random;
  *
  * Time: O(n)
  * Space: O(1)
- * 
+ *
  * Created by Jia on 12/2/16.
  */
 public class InPlaceShuffle {
