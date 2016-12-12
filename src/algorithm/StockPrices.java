@@ -21,21 +21,21 @@ public class StockPrices {
 
     public static void main(String[] args) {
         prices = new int[] {10, 7, 5, 8, 11, 9};
-        System.out.println(solve());
+        System.out.println(solve());        //6
 
         prices = new int[] {10, 7, 6, 100, 5, 8, 11, 9};
-        System.out.println(solve());
+        System.out.println(solve());        //94
 
 
         prices = new int[] {5, 10, 4, 6, 7};
-        System.out.println(solve());
+        System.out.println(solve());        //5
 
 
         prices = new int[] {5, 10, 4, 6, 12};
-        System.out.println(solve());
+        System.out.println(solve());    //8
 
         prices = new int[] {1,2,3,4,5};
-        System.out.println(solve());
+        System.out.println(solve());        //4
     }
 
     private static int solve() {
