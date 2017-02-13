@@ -5,6 +5,8 @@ import java.util.List;
 
 /**
  * Created by jitse on 11/28/15.
+ *
+ * https://www.tutorialspoint.com/data_structures_algorithms/tower_of_hanoi.htm
  */
 public class TowerOfHanoi {
 
@@ -33,8 +35,15 @@ public class TowerOfHanoi {
         if (n < 0) {
             return;
         } else {
+            //there are 3 steps done in a recursive manner:
+
+            //1) move n-1 disks from the src peg to the aux peg (treating the dest peg as "aux");
             solve (n-1, src, dest, aux);
+
+            //2) move the nth disk over to the dest peg
             System.out.println(++moves + ":  Moving " + pegs.get(n).name + " from " + src + " to " + dest);
+
+            //3) now move the n-1 that's in the aux peg (from step 1) to the dest peg (using src as "aux"0)
             solve (n-1, aux, src, dest);
         }
     }

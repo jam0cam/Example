@@ -43,6 +43,15 @@ public class LongestSubsequence {
     }
 
 
+    /*
+    NOTE: The below code is incorrect, shoulde be:
+    1. sort the input persons by height. O(nlogn)
+    2. find the longest increasing weight sequence in the sorted list. This can be done in O(n^2) with DP. (LIS)
+
+    https://www.careercup.com/question?id=9339758
+     */
+
+
     public static int getMax() {
         sort();
 
